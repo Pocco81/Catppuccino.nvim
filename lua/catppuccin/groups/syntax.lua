@@ -10,30 +10,30 @@ function M.get()
 		Number = { fg = C.peach, style = O.styles.numbers or {} }, --   a number constant: 234, 0xff
 		Float = { link = "Number" }, --    a floating point constant: 2.3e10
 		Boolean = { fg = C.peach, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
-		Identifier = { fg = C.flamingo, style = O.styles.variables or {} }, -- (preferred) any variable name
+		Identifier = { fg = C.text, style = O.styles.variables or {} }, -- (preferred) any variable name
 		Function = { fg = C.blue, style = O.styles.functions or {} }, -- function name (also: methods for classes)
 		Statement = { fg = C.mauve }, -- (preferred) any statement
 		Conditional = { fg = C.mauve, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
 		Repeat = { fg = C.mauve, style = O.styles.loops or {} }, --   for, do, while, etc.
-		Label = { fg = C.sapphire }, --    case, default, etc.
+		Label = { fg = C.rosewater }, --    case, default, etc.
 		Operator = { fg = C.sky, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
-		Keyword = { fg = C.mauve, style = O.styles.keywords or {} }, --  any other keyword
-		Exception = { fg = C.mauve, style = O.styles.keywords or {} }, --  try, catch, throw
+		Keyword = { fg = C.maroon, style = O.styles.keywords or {} }, --  any other keyword
+		Exception = { fg = C.peach, style = O.styles.keywords or {} }, --  try, catch, throw
 
 		PreProc = { fg = C.pink }, -- (preferred) generic Preprocessor
-		Include = { fg = C.mauve, style = O.styles.keywords or {} }, --  preprocessor #include
+		Include = { fg = C.teal, style = O.styles.keywords or {} }, --  preprocessor #include
 		Define = { link = "PreProc" }, -- preprocessor #define
-		Macro = { fg = C.mauve }, -- same as Define
+		Macro = { link = "Constant" }, -- same as Define
 		PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
 
-		StorageClass = { fg = C.yellow }, -- static, register, volatile, etc.
-		Structure = { fg = C.yellow }, --  struct, union, enum, etc.
+		StorageClass = { link = "Keyword" }, -- static, register, volatile, etc.
+		Structure = { link = "Keyword" }, --  struct, union, enum, etc.
 		Special = { fg = C.pink }, -- (preferred) any special symbol
 		Type = { fg = C.yellow, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
 		Typedef = { link = "Type" }, --  A typedef
 		SpecialChar = { link = "Special" }, -- special character in a constant
 		Tag = { fg = C.lavender, style = { "bold" } }, -- you can use CTRL-] on this
-		Delimiter = { fg = C.overlay2 }, -- character that needs attention
+		Delimiter = { fg = C.teal }, -- delimiters (e.g. `;` / `.` / `,`)
 		Debug = { link = "Special" }, -- debugging statements
 
 		Underlined = { style = { "underline" } }, -- (preferred) text that stands out, HTML links

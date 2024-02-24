@@ -8,7 +8,7 @@ function M.get()
 	local error = C.red
 	local warning = C.yellow
 	local info = C.sky
-	local hint = C.teal
+	local hint = C.rosewater
 	local darkening_percentage = 0.095
 
 	return {
