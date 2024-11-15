@@ -23,7 +23,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@constant.builtin"] = { fg = C.peach, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
 		["@constant.macro"] = { link = "Macro" }, -- For constants that are defined by macros: NULL in C.
 
-		["@module"] = { fg = C.lavender, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
+		["@module"] = { fg = C.yellow, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
 		["@label"] = { link = "Label" }, -- For labels: label: in C and :label: in Lua.
 
 		-- Literals
@@ -45,7 +45,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		-- Types
 		["@type"] = { link = "Type" }, -- For types.
-		["@type.builtin"] = { fg = C.yellow, style = O.styles.properties or { "italic" } }, -- For builtin types.
+		["@type.builtin"] = { fg = C.mauve, style = O.styles.properties or { "italic" } }, -- For builtin types.
 		["@type.definition"] = { link = "Type" }, -- type definitions (e.g. `typedef` in C)
 
 		["@attribute"] = { link = "Constant" }, -- attribute annotations (e.g. Python decorators)
@@ -129,9 +129,9 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@diff.delta"] = { link = "diffChanged" }, -- deleted text (for diff files)
 
 		-- Tags
-		["@tag"] = { fg = C.mauve }, -- Tags like html tag names.
-		["@tag.attribute"] = { fg = C.teal, style = O.styles.miscs or { "italic" } }, -- Tags like html tag names.
-		["@tag.delimiter"] = { fg = C.sky }, -- Tag delimiter like < > /
+		["@tag"] = { fg = C.blue }, -- Tags like html tag names.
+		["@tag.attribute"] = { fg = C.yellow, style = O.styles.miscs or { "italic" } }, -- Tags like html tag names.
+		["@tag.delimiter"] = { fg = C.teal }, -- Tag delimiter like < > /
 
 		-- Misc
 		["@error"] = { link = "Error" },
@@ -152,12 +152,12 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@constant.java"] = { fg = C.teal },
 
 		-- css
-		["@property.css"] = { fg = C.lavender },
-		["@property.id.css"] = { fg = C.blue },
+		["@property.css"] = { fg = C.blue },
+		["@property.id.css"] = { fg = C.yellow },
 		["@property.class.css"] = { fg = C.yellow },
 		["@type.css"] = { fg = C.lavender },
-		["@type.tag.css"] = { fg = C.mauve },
-		["@string.plain.css"] = { fg = C.peach },
+		["@type.tag.css"] = { fg = C.blue },
+		["@string.plain.css"] = { fg = C.text },
 		["@number.css"] = { fg = C.peach },
 
 		-- toml
