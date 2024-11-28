@@ -82,7 +82,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@keyword.directive"] = { link = "PreProc" }, -- various preprocessor directives & shebangs
 		["@keyword.directive.define"] = { link = "Define" }, -- preprocessor definition directives
 		-- JS & derivative
-		["@keyword.export"] = { fg = C.sky, style = O.styles.keywords },
+		["@keyword.export"] = { fg = C.mauve, style = O.styles.keywords },
 
 		-- Punctuation
 		["@punctuation.delimiter"] = { link = "Delimiter" }, -- For delimiters (e.g. `;` / `.` / `,`).
