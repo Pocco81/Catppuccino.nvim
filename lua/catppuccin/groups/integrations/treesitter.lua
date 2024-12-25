@@ -17,7 +17,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@variable"] = { fg = C.text, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
 		["@variable.builtin"] = { fg = C.red, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
 		["@variable.parameter"] = { fg = C.maroon, style = O.styles.variables or {} }, -- For parameters of a function.
-		["@variable.member"] = { fg = C.lavender }, -- For fields.
+		["@variable.member"] = { fg = C.text }, -- For fields.
 
 		["@constant"] = { link = "Constant" }, -- For constants
 		["@constant.builtin"] = { fg = C.peach, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
@@ -69,7 +69,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@keyword.type"] = { link = "Keyword" }, -- For keywords describing composite types (e.g. `struct`, `enum`)
 		["@keyword.coroutine"] = { link = "Keyword" }, -- For keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
 		["@keyword.function"] = { fg = C.mauve, style = O.styles.keywords or {} }, -- For keywords used to define a function.
-		["@keyword.operator"] = { link = "Operator" }, -- For new keyword operator
+		["@keyword.operator"] = { fg = C.mauve, style = O.styles.keywords or {} }, -- For new keyword operator
 		["@keyword.import"] = { link = "Include" }, -- For includes: #include in C, use or extern crate in Rust, or require in Lua.
 		["@keyword.repeat"] = { link = "Repeat" }, -- For keywords related to loops.
 		["@keyword.return"] = { fg = C.mauve, style = O.styles.keywords or {} },
