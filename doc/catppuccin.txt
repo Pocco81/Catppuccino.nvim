@@ -3,34 +3,26 @@
 ==============================================================================
 Table of Contents                               *catppuccin-table-of-contents*
 
-1. Features                                              |catppuccin-features|
-2. Installation                                      |catppuccin-installation|
-3. Usage                                                    |catppuccin-usage|
-4. Configuration                                    |catppuccin-configuration|
-5. Customize highlights                      |catppuccin-customize-highlights|
-  - Get catppuccin colors|catppuccin-customize-highlights-get-catppuccin-colors|
-  - Overwriting colors    |catppuccin-customize-highlights-overwriting-colors|
-  - Overwriting highlight groups|catppuccin-customize-highlights-overwriting-highlight-groups|
-6. Integrations                                      |catppuccin-integrations|
-7. Compile                                                |catppuccin-compile|
-8. FAQ                                                        |catppuccin-faq|
-  - Wrong treesitter highlights   |catppuccin-faq-wrong-treesitter-highlights|
-  - Colors doesn’t match preview screenshots|catppuccin-faq-colors-doesn’t-match-preview-screenshots|
-9. Thanks to                                            |catppuccin-thanks-to|
-10. Links                                                   |catppuccin-links|
+  - Features                                             |catppuccin-features|
+  - Installation                                     |catppuccin-installation|
+  - Usage                                                   |catppuccin-usage|
+  - Configuration                                   |catppuccin-configuration|
+  - Customization                                   |catppuccin-customization|
+  - Integrations                                     |catppuccin-integrations|
+  - Compile                                               |catppuccin-compile|
+  - 🙋 FAQ                                             |catppuccin-🙋-faq|
+  - 💝 Thanks to                                 |catppuccin-💝-thanks-to|
 
-==============================================================================
-1. Features                                              *catppuccin-features*
+FEATURES                                                 *catppuccin-features*
 
-- Supports both vim and neovim (Requires neovim <https://github.com/neovim/neovim/> >= 0.8 or vim <https://github.com/vim/vim> >= 9 compiled with lua <https://github.com/lua/lua> >= 5.1)
-- Highly configurable with 4 different flavours and ability to create your own! <https://github.com/catppuccin/nvim/discussions/323>
-- Compile <https://github.com/catppuccin/nvim#Compile> user config for fastest startuptime <https://www.reddit.com/r/neovim/comments/xxfpt3/catppuccinnvim_now_startup_in_1ms/>
+- Supports both Vim and Neovim (requires neovim <https://github.com/neovim/neovim/> >= 0.8 or vim <https://github.com/vim/vim> >= 9 compiled with lua <https://github.com/lua/lua> >= 5.1)
+- Highly configurable with 4 different flavours and the ability to create your own! <https://github.com/catppuccin/nvim/discussions/323>
+- Compiled <https://github.com/catppuccin/nvim#Compile> configuration for fast startup time <https://www.reddit.com/r/neovim/comments/xxfpt3/catppuccinnvim_now_startup_in_1ms/>
 - Integrations with lsp, treesitter and a bunch of plugins <https://github.com/catppuccin/nvim#integrations>
-- Supports for many other applications <https://github.com/catppuccin/catppuccin>
+- Support for many other applications <https://github.com/catppuccin/catppuccin>
 
 
-==============================================================================
-2. Installation                                      *catppuccin-installation*
+INSTALLATION                                         *catppuccin-installation*
 
 lazy.nvim <https://github.com/folke/lazy.nvim>
 
@@ -58,8 +50,7 @@ vim-plug <https://github.com/junegunn/vim-plug>
 <
 
 
-==============================================================================
-3. Usage                                                    *catppuccin-usage*
+USAGE                                                       *catppuccin-usage*
 
 >vim
     colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
@@ -70,8 +61,7 @@ vim-plug <https://github.com/junegunn/vim-plug>
 <
 
 
-==============================================================================
-4. Configuration                                    *catppuccin-configuration*
+CONFIGURATION                                       *catppuccin-configuration*
 
 There is no need to call `setup` if you don’t want to change the default
 options and settings.
@@ -131,11 +121,10 @@ options and settings.
 <
 
 
-==============================================================================
-5. Customize highlights                      *catppuccin-customize-highlights*
+CUSTOMIZATION                                       *catppuccin-customization*
 
 
-GET CATPPUCCIN COLORS  *catppuccin-customize-highlights-get-catppuccin-colors*
+GETTING COLORS ~
 
 >lua
     local latte = require("catppuccin.palettes").get_palette "latte"
@@ -144,14 +133,14 @@ GET CATPPUCCIN COLORS  *catppuccin-customize-highlights-get-catppuccin-colors*
     local mocha = require("catppuccin.palettes").get_palette "mocha"
 <
 
-Returns a table where the key is the name of the color and the value is its hex
-value corresponding to each flavour.
+Returns a table where the key is the name of the color and the value is the hex
+code.
 
 
-OVERWRITING COLORS        *catppuccin-customize-highlights-overwriting-colors*
+OVERWRITING COLORS ~
 
-Colors can be overwritten using `color_overrides` in the setting, checkout
-https://github.com/catppuccin/nvim/discussions/323 for inspirations:
+Colors can be overwritten using `color_overrides`, see
+https://github.com/catppuccin/nvim/discussions/323 for inspiration:
 
 >lua
     require("catppuccin").setup {
@@ -172,12 +161,9 @@ https://github.com/catppuccin/nvim/discussions/323 for inspirations:
 <
 
 
-  [!Note] For more information check out our style-guide
-  <https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md>
+OVERWRITING HIGHLIGHT GROUPS ~
 
-OVERWRITING HIGHLIGHT GROUPS*catppuccin-customize-highlights-overwriting-highlight-groups*
-
-Global highlight groups can be overwritten in the setting, for example:
+Global highlight groups can be overwritten, for example:
 
 >lua
     require("catppuccin").setup {
@@ -192,8 +178,7 @@ Global highlight groups can be overwritten in the setting, for example:
     }
 <
 
-Per flavour highlight groups can also be overwritten in the setting, for
-example:
+Highlight groups per flavour can also be overwritten, for example:
 
 >lua
     require("catppuccin").setup {
@@ -229,8 +214,7 @@ example:
 <
 
 
-==============================================================================
-6. Integrations                                      *catppuccin-integrations*
+INTEGRATIONS                                         *catppuccin-integrations*
 
 Catppuccin provides theme support for other plugins in the Neovim ecosystem and
 extended Neovim functionality through _integrations_.
@@ -263,13 +247,14 @@ Some integrations are enabled by default, you can control this behaviour with
     })
 <
 
-Below is a list of supported plugins and their corresponding integration
+Below are a list of supported plugins and their corresponding integration
 module.
 
 
-  [!Important] If you’d like to know which highlight groups are being affected
-  by catppuccin, check out this directory: `lua/catppuccin/groups/integrations/`
-  <https://github.com/catppuccin/nvim/tree/main/lua/catppuccin/groups/integrations>.
+  [!Important] If you’d like to see the full list of highlight groups modified
+  by Catppuccin, see the `lua/catppuccin/groups/integrations/`
+  <https://github.com/catppuccin/nvim/tree/main/lua/catppuccin/groups/integrations>
+  directory.
 PluginDefaultaerial.nvim>lua
     aerial = false
 <
@@ -314,7 +299,7 @@ bufferline.nvimSpecial ~
 Update your bufferline config to use the Catppuccin components:
 
 
-  [!NOTE] bufferline needs to be loaded after setting up catppuccin or it will
+  [!NOTE] bufferline needs to be loaded after setting up Catppuccin or it will
   highlight incorrectly
 >lua
     use "akinsho/bufferline.nvim" {
@@ -365,7 +350,7 @@ Setting `enabled` to `true` enables this integration.
 
   [!Note] coc.nvim by default link to native lsp highlight groups so config from
   `native_lsp` will also apply to coc
-In the inners tables you can set the style for the diagnostics, both
+In the nested tables you can set the style for the diagnostics, both
 `virtual_text` (what you see on the side) and `underlines` (what points
 directly at the thing (e.g. an error)).
 
@@ -892,19 +877,15 @@ which-key.nvim>lua
 <
 
 
-==============================================================================
-7. Compile                                                *catppuccin-compile*
+COMPILE                                                   *catppuccin-compile*
 
-
-  **Important** As of 7/10/2022, catppuccin should be able to automatically
-  recompile when the setup table changed.
 Catppuccin is a highly customizable and configurable colorscheme. This does
 however come at the cost of complexity and execution time. Catppuccin can pre
 compute the results of your configuration and store the results in a compiled
-lua file. We use these precached values to set it’s highlights.
+Lua file. We use these pre-cached values to set it’s highlights.
 
-By default catppuccin writes the compiled results into the system’s cache
-directory. You can change the cache dir using:
+By default, Catppuccin writes the compiled results into the system’s cache
+directory. See below if you’d like to change the cache directory:
 
 >lua
     require("catppuccin").setup({ -- Note: On windows we replace `/` with `\` by default
@@ -913,13 +894,12 @@ directory. You can change the cache dir using:
 <
 
 
-==============================================================================
-8. FAQ                                                        *catppuccin-faq*
+🙋 FAQ                                                 *catppuccin-🙋-faq*
 
 
-WRONG TREESITTER HIGHLIGHTS       *catppuccin-faq-wrong-treesitter-highlights*
+WHY DO MY TREESITTER HIGHLIGHTS LOOK INCORRECT? ~
 
-Please disable `additional_vim_regex_highlighting`
+Please disable `additional_vim_regex_highlighting`:
 
 >lua
     require("nvim-treesitter.configs").setup {
@@ -931,40 +911,33 @@ Please disable `additional_vim_regex_highlighting`
 <
 
 
-COLORS DOESN’T MATCH PREVIEW SCREENSHOTS*catppuccin-faq-colors-doesn’t-match-preview-screenshots*
+WHY AREN’T MY COLORS THE SAME AS THE PREVIEWS? ~
 
-Catppuccin requires true color support AKA terminals support the full range of
-16 million colors
+Catppuccin requires that your terminal supports true color, meaning that your
+terminal can display the full range of 16 million colors.
 
-- Supported: iterm2 (macOS), kitty, wezterm, alacritty, tmux, …
+- Supported: iterm2 (macOS), kitty, wezterm, alacritty, see full list… <https://github.com/termstandard/colors#truecolor-support-in-output-devices>
+- Unsupported: Terminal.app (macOS), Terminus, Terminology, see full list… <https://github.com/termstandard/colors#not-supporting-truecolor>
 
-Full list of support terminals can be found here:
-<https://github.com/termstandard/colors#truecolor-support-in-output-devices>
-
-- Unsupported terminal: Terminal.app (macOS), Terminus, Terminology, …
-
-Full list of Unsupported terminals can be found here:
-<https://github.com/termstandard/colors#not-supporting-truecolor>
-
-
-FOR TMUX USERS ~
-
-- Enable true color support <https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6> to fix the following abnormal colors <https://github.com/catppuccin/nvim/issues/415>:
-
-- Enable italic font support <https://gist.github.com/gyribeiro/4192af1aced7a1b555df06bd3781a722> to fix the following incorrect if, then, else, end highlights <https://github.com/catppuccin/nvim/issues/428>:
+If you use tmux, make sure to enable true color support
+<https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6> and
+italic font support
+<https://gist.github.com/gyribeiro/4192af1aced7a1b555df06bd3781a722>. This will
+prevent issues raised in #415 <https://github.com/catppuccin/nvim/issues/415>
+and #428 <https://github.com/catppuccin/nvim/issues/428>.
 
 
-==============================================================================
-9. Thanks to                                            *catppuccin-thanks-to*
+💝 THANKS TO                                     *catppuccin-💝-thanks-to*
+
+**Current Maintainer(s)**
+
+- vollowx <https://github.com/vollowx>
+
+**Previous Maintainer(s)**
 
 - Pocco81 <https://github.com/Pocco81>
 - nullchilly <https://github.com/nullchilly>
-
-==============================================================================
-10. Links                                                   *catppuccin-links*
-
-1. *image*: https://user-images.githubusercontent.com/1941785/220280749-c3ab52fb-9b8a-4f04-ab98-f8c1bb41f84b.png
-2. *image*: https://user-images.githubusercontent.com/13246770/224011118-dcf0f567-650a-4eb2-8be6-0af5cf435501.png
+- mrtnvgr <https://github.com/mrtnvgr>
 
 Generated by panvimdoc <https://github.com/kdheepak/panvimdoc>
 
