@@ -46,6 +46,9 @@ function M.get()
 
 			GitSignsAddPreview = O.transparent_background and { fg = C.green, bg = C.none } or { link = "DiffAdd" },
 			GitSignsDeletePreview = O.transparent_background and { fg = C.red, bg = C.none } or { link = "DiffDelete" },
+
+			GitSignsAddInline = { bg = U.darken(C.green, 0.36, C.base) },
+			GitSignsDeleteInline = { bg = U.darken(C.red, 0.36, C.base) },
 		}
 	end
 end
