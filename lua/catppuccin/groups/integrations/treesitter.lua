@@ -179,6 +179,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		-- yaml
 		["@variable.member.yaml"] = { fg = C.blue }, -- For fields.
+		["@variable.member.nix"] = { fg = C.blue },
 
 		-- Ruby
 		["@string.special.symbol.ruby"] = { fg = C.flamingo },
