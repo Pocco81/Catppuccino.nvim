@@ -81,6 +81,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		["@keyword.directive"] = { link = "PreProc" }, -- various preprocessor directives & shebangs
 		["@keyword.directive.define"] = { link = "Define" }, -- preprocessor definition directives
+		["@keyword.directive.css"] = { link = "Keyword" }, -- CSS at-rules: https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule.
 		-- JS & derivative
 		["@keyword.export"] = { fg = C.mauve, style = O.styles.keywords },
 
