@@ -189,9 +189,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@function.method.call.php"] = { link = "Function" },
 
 		-- C/CPP
-		["@type.builtin.c"] = { fg = C.yellow, style = {} },
 		["@property.cpp"] = { fg = C.text },
-		["@type.builtin.cpp"] = { fg = C.yellow, style = {} },
 
 		-- gitcommit
 		["@comment.warning.gitcommit"] = { fg = C.yellow },
