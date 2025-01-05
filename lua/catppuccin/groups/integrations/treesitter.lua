@@ -113,9 +113,9 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@markup.environment"] = { fg = C.pink }, -- text environments of markup languages
 		["@markup.environment.name"] = { fg = C.blue }, -- text indicating the type of an environment
 
-		["@markup.link"] = { link = "Tag" }, -- text references, footnotes, citations, etc.
-		["@markup.link.label"] = { link = "Label" }, -- link, reference descriptions
-		["@markup.link.url"] = { fg = C.rosewater, style = { "italic", "underline" } }, -- urls, links and emails
+		["@markup.link"] = { fg = C.lavender }, -- text references, footnotes, citations, etc.
+		["@markup.link.label"] = { fg = C.lavender }, -- link, reference descriptions
+		["@markup.link.url"] = { fg = C.blue, style = { "italic", "underline" } }, -- urls, links and emails
 
 		["@markup.raw"] = { fg = C.teal }, -- used for inline code in markdown and for doc in python (""")
 
