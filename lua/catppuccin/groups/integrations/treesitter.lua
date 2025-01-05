@@ -130,8 +130,9 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@diff.delta"] = { link = "diffChanged" }, -- deleted text (for diff files)
 
 		-- Tags
-		["@tag"] = { fg = C.blue }, -- Tags like html tag names.
-		["@tag.attribute"] = { fg = C.yellow, style = O.styles.miscs or { "italic" } }, -- Tags like html tag names.
+		["@tag"] = { fg = C.blue }, -- Tags like HTML tag names.
+		["@tag.builtin"] = { fg = C.blue }, -- JSX tag names.
+		["@tag.attribute"] = { fg = C.yellow, style = O.styles.miscs or { "italic" } }, -- XML/HTML attributes (foo in foo="bar").
 		["@tag.delimiter"] = { fg = C.teal }, -- Tag delimiter like < > /
 
 		-- Misc
