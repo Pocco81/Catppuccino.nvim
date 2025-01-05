@@ -101,15 +101,15 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		-- Markup
 		["@markup"] = { fg = C.text }, -- For strings considerated text in a markup language.
-		["@markup.strong"] = { fg = C.maroon, style = { "bold" } }, -- bold
-		["@markup.italic"] = { fg = C.maroon, style = { "italic" } }, -- italic
+		["@markup.strong"] = { fg = C.red, style = { "bold" } }, -- bold
+		["@markup.italic"] = { fg = C.red, style = { "italic" } }, -- italic
 		["@markup.strikethrough"] = { fg = C.text, style = { "strikethrough" } }, -- strikethrough text
 		["@markup.underline"] = { link = "Underlined" }, -- underlined text
 
 		["@markup.heading"] = { fg = C.blue, style = { "bold" } }, -- titles like: # Example
 
 		["@markup.math"] = { fg = C.blue }, -- math environments (e.g. `$ ... $` in LaTeX)
-		["@markup.quote"] = { fg = C.maroon, style = { "bold" } }, -- block quotes
+		["@markup.quote"] = { fg = C.pink }, -- block quotes
 		["@markup.environment"] = { fg = C.pink }, -- text environments of markup languages
 		["@markup.environment.name"] = { fg = C.blue }, -- text indicating the type of an environment
 
@@ -117,9 +117,9 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@markup.link.label"] = { fg = C.lavender }, -- link, reference descriptions
 		["@markup.link.url"] = { fg = C.blue, style = { "italic", "underline" } }, -- urls, links and emails
 
-		["@markup.raw"] = { fg = C.teal }, -- used for inline code in markdown and for doc in python (""")
+		["@markup.raw"] = { fg = C.green }, -- used for inline code in markdown and for doc in python (""")
 
-		["@markup.list"] = { link = "Special" },
+		["@markup.list"] = { fg = C.teal },
 		["@markup.list.checked"] = { fg = C.green }, -- todo notes
 		["@markup.list.unchecked"] = { fg = C.overlay1 }, -- todo notes
 
