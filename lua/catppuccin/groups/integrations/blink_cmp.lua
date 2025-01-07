@@ -4,6 +4,12 @@ function M.get()
 	return {
 		BlinkCmpLabel = { fg = C.overlay2 },
 		BlinkCmpLabelDeprecated = { fg = C.overlay0, style = { "strikethrough" } },
+		BlinkCmpKind = { fg = C.blue },
+		BlinkCmpMenu = { fg = C.text },
+		BlinkCmpMenuBorder = { fg = C.blue },
+		BlinkCmpDocBorder = { fg = C.blue },
+		BlinkCmpSignatureHelpActiveParameter = { fg = C.mauve },
+		BlinkCmpSignatureHelpBorder = { fg = C.blue },
 
 		BlinkCmpLabelMatch = { fg = C.text, style = { "bold" } },
 		BlinkCmpKindText = { fg = C.green },
