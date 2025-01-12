@@ -106,7 +106,7 @@ local M = {
 			},
 			mini = {
 				enabled = true,
-				indentscope_color = "text",
+				indentscope_color = "overlay2",
 			},
 		},
 		color_overrides = {},
